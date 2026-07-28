@@ -1,2 +1,2 @@
 # mPFC-spatial-progress-cell-analysis
-Code for spatial-progress cells paper
+MATLAB code used to generate "A Generalized Spatial Progress Code for Navigation in the Medial Prefrontal Cortex"
