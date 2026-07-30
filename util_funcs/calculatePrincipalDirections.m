@@ -1,9 +1,10 @@
-function [principalDirections, meanTrajectories] = calculatePrincipalDirections(umapData, pathLabels, binNum,Plot)
+function [principalDirections, meanTrajectories] = calculatePrincipalDirections(umapData, pathLabels, pathNames, binNum,Plot)
 % 计算每条路径平均流形的主要方向
 %
 % 输入:
 %   umapData: N×3矩阵，UMAP坐标 [x, y, z]
 %   pathLabels: N×1向量，路径标签 (如1,2,3,4)
+%   pathNames: 路径种类×1向量，路径名称 (如1,2,3,4)
 %   binNum: N×1向量，bin编号 (如1-20)
 %   Plot：是否画图显示结果
 %
@@ -11,8 +12,7 @@ function [principalDirections, meanTrajectories] = calculatePrincipalDirections(
 %   principalDirections: 结构数组，包含每条路径的主成分信息
 %   meanTrajectories: 路径数×bin数×3矩阵，平均流形坐标
 
-uniquePaths = unique(pathLabels);
-numPaths = length(uniquePaths);
+numPaths = length(pathNames);
 numBins = max(binNum);
 
 meanTrajectories = zeros(numPaths, numBins, 3);
@@ -23,10 +23,10 @@ end
 for i = 1:numPaths
     % 提取当前路径的所有数据
     if iscell(pathLabels)
-        pathId = uniquePaths{i};
+        pathId = pathNames{i};
         pathMask = strcmp(pathLabels,pathId);
     elseif isnumeric(pathLabels)
-        pathId = uniquePaths(i);
+        pathId = pathNames(i);
         pathMask = pathLabels == pathId;
     else
         error('pathLabels必须是数组或cell')
