@@ -1,7 +1,5 @@
 function colorList=CMap(type,num)
-% 使用方法：
-% 不指定获取颜色个数会默认256色，举例获取[163]号彩虹色(rainbow)，以下两种写法等价：
-% 
+% 不指定获取颜色个数会默认256色
 % CMap(‘rainbow’)
 % CMap(163)
 % 第二个参数可以指定获取颜色数量，例如获取30颜色：
@@ -10,11 +8,7 @@ function colorList=CMap(type,num)
 % CMap(163,30)
 % 将获取的颜色放入colormap函或者某些图像的CData即可，例如：
 % 
-% colormap(CMap('rainbow'))
-% ————————————————
-% 
-% 
-% 原文链接：https://blog.csdn.net/slandarer/article/details/127719784
+
 % 集聚200种colormap
 % WYZ
 if nargin<2
