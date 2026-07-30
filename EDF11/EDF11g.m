@@ -26,7 +26,7 @@ for ani=1:nAnimals
     plot([0.5,1.5],[Intra_Inter_Prog_Dist_ratio_dir2(ani,1),Intra_Inter_Prog_Dist_ratio_dir2(ani,2)],'Color',[0.8,0.8,0.8])
 end
 ylabel('Intra/Inter prog. dist.');box off
-set(gca,'FontSize',12,'FontName', 'Arial','FontWeight', 'normal'); % 坐标轴刻度
+set(gca,'FontSize',12,'FontName', 'Arial','FontWeight', 'normal'); 
 set(gca,'LineWidth',1.5);set(gca,'TickLength',[0.03 0.03],'TickDir','out');box off
 ylim([0.6,1]);yticks([0.6,0.8,1]);
 xlim([0,2]);xticks([0.5,1.5]);xticklabels({'Saline','CNO'});

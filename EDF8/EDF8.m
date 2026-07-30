@@ -11,13 +11,14 @@ figures_visibility='on';
 animal_ID='YZ06';
 
 load('EDF8/umap_single_trial_trajectories.mat')
+
 %%
-trial_betweenBin_dist=cell(numTrials,1);trial_Pathname=cell(numTrials,1);% 记录每个试次的神经流形相邻点（bin）间距离及试次所属路径名
-TrialPoints=cell(numTrials,1);% 记录每个试次点的坐标
+trial_betweenBin_dist=cell(numTrials,1);trial_Pathname=cell(numTrials,1);
+TrialPoints=cell(numTrials,1);
 for c = 1:numTrials
     for j = 1:numPaths
-        clusterPoints = Y(strcmp(labels_Path,categories_Path{j}) & strcmp(labels_TrialIdx,categories_TrialIdx{c}), :); % 指定试次时的点
-        if isempty(clusterPoints);continue;end% 说明该试次不是这一路径的
+        clusterPoints = Y(strcmp(labels_Path,categories_Path{j}) & strcmp(labels_TrialIdx,categories_TrialIdx{c}), :);
+        if isempty(clusterPoints);continue;end
         if size(clusterPoints,1)~=numBins;error('指定试次时，点的数量应与bin数相同');end
         TrialPoints{c}=clusterPoints;
 

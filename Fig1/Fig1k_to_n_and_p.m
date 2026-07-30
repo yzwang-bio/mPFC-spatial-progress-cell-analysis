@@ -38,7 +38,7 @@ mpreference_index2 = mean(preference_index2, 1, 'omitmissing'); sepreference_ind
 
 %%
 categ={'Naive','Trained'};
-figure('Position',[817 812.4286 422.2857 219.5714])
+figure('Position',[817 812.4286 422.2857 219.5714]) % Number of trials/minute
 hold on;
 b=bar([1,2],[mnumTrial_min1;mnumTrial_min2],'EdgeColor',bar_edgecolor,'LineWidth',bar_linewidth,'FaceColor','flat');
 xticks([1, 2]);xticklabels(categ);
@@ -56,7 +56,7 @@ set(gca,'LineWidth',1.5);set(gca,'TickLength',[0.03 0.03],'TickDir','out');
 leg=legend({'Saline','CNO'},'Location','northeast');leg.FontSize=8;leg.FontWeight='normal';set(leg,'Position',[0.775763604382151 0.804071427320253 0.153316328650661 0.0841836759717404],'FontSize',10);
 legend('boxoff')
 
-figure('Position',[817 812.4286 422.2857 219.5714])
+figure('Position',[817 812.4286 422.2857 219.5714]) % Random pause
 hold on;
 b=bar([1,2],[mrandom_pause1;mrandom_pause2],'EdgeColor',bar_edgecolor,'LineWidth',bar_linewidth,'FaceColor','flat');
 xticks([1, 2]);xticklabels(categ);
@@ -74,7 +74,7 @@ set(gca,'LineWidth',1.5);set(gca,'TickLength',[0.03 0.03],'TickDir','out');
 leg=legend({'Saline','CNO'},'Location','northeast');leg.FontSize=8;leg.FontWeight='normal';set(leg,'Position',[0.775763604382151 0.804071427320253 0.153316328650661 0.0841836759717404],'FontSize',10);
 legend('boxoff')
 
-figure('Position',[817 812.4286 422.2857 219.5714])
+figure('Position',[817 812.4286 422.2857 219.5714]) % Choice time
 hold on;
 b=bar([1,2],[mchoice_time1;mchoice_time2],'EdgeColor',bar_edgecolor,'LineWidth',bar_linewidth,'FaceColor','flat');
 xticks([1, 2]);xticklabels(categ);
@@ -92,7 +92,7 @@ set(gca,'LineWidth',1.5);set(gca,'TickLength',[0.03 0.03],'TickDir','out');
 leg=legend({'Saline','CNO'},'Location','northeast');leg.FontSize=8;leg.FontWeight='normal';set(leg,'Position',[0.775763604382151 0.804071427320253 0.153316328650661 0.0841836759717404],'FontSize',10);
 legend('boxoff')
 
-figure('Position',[817 812.4286 422.2857 219.5714])
+figure('Position',[817 812.4286 422.2857 219.5714]) % Incomplete trial rate
 hold on;
 b=bar([1,2],[mnumIncompleteTrials1;mnumIncompleteTrials2],'EdgeColor',bar_edgecolor,'LineWidth',bar_linewidth,'FaceColor','flat');
 xticks([1, 2]);xticklabels(categ);
@@ -110,7 +110,7 @@ set(gca,'LineWidth',1.5);set(gca,'TickLength',[0.03 0.03],'TickDir','out');
 leg=legend({'Saline','CNO'},'Location','northeast');leg.FontSize=8;leg.FontWeight='normal';set(leg,'Position',[0.775763604382151 0.804071427320253 0.153316328650661 0.0841836759717404],'FontSize',10);
 legend('boxoff')
 
-figure
+figure('Position',[817 812.4286 422.2857 219.5714]) % Preference index
 hold on;
 b=bar([1,2],[mpreference_index1;mpreference_index2],'EdgeColor',bar_edgecolor,'LineWidth',bar_linewidth,'FaceColor','flat');
 xticks([1, 2]);xticklabels(categ);

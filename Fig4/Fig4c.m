@@ -15,7 +15,7 @@ nAnimals=size(path_to_path_corr{1},1);
 mpath_to_path_corr=cellfun(@(x) mean(x,1,'omitmissing'),path_to_path_corr,'UniformOutput',false);
 sepath_to_path_corr=cellfun(@(x) std(x,1,1,'omitmissing')./sqrt(nAnimals),path_to_path_corr,'UniformOutput',false);
 
-%%
+%% Correlation coefficients of normalized peak firing positions between different path pairs
 categ={'Naive','Trained'};
 figure('Position',[654.1429 659.2857 734.2857 253.7143]);title('Correlation coefficients of normalized peak firing positions between different path pairs','Visible',figures_visibility)
 hold on

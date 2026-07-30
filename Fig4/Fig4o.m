@@ -13,6 +13,7 @@ load('Fig4/progress_decoding_trapezoidT.mat')
 nAnimals=size(decoding_error,1);
 mdecoding_error_dir1=mean(decoding_error,1,'omitmissing');
 sedecoding_error_dir1=std(decoding_error,1,1,'omitmissing')./sqrt(nAnimals);
+
 %% Trained on 75% of trials
 categ={'Decoded','Shuffled'};
 figure('Position',[797 212 280 248],'units','normalized','Visible',figures_visibility);

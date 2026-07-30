@@ -40,7 +40,7 @@ for ani=1:nAnimals
     plot([2.5,3.5],[Intra_Inter_Prog_Dist_dir2(ani,1),Intra_Inter_Prog_Dist_dir2(ani,2)],'Color',[0.8,0.8,0.8])
 end
 ylabel('Eucl. dist. (a.u.)');box off
-set(gca,'FontSize',12,'FontName', 'Arial','FontWeight', 'normal'); % 坐标轴刻度
+set(gca,'FontSize',12,'FontName', 'Arial','FontWeight', 'normal');
 set(gca,'LineWidth',1.5);set(gca,'TickLength',[0.03 0.03],'TickDir','out');box off
 yticks([1,4,7]);yticklabels([1,4,7]);ylim([1,7])
 xlim([0,4]);xticks([1,3]);xticklabels({'Rightward','Leftward'});
@@ -66,7 +66,7 @@ for ani=1:nAnimals
     plot([2.5,3.5],[Intra_Inter_Path_Dist_dir2(ani,1),Intra_Inter_Path_Dist_dir2(ani,2)],'Color',[0.8,0.8,0.8])
 end
 ylabel('Eucl. dist. (a.u.)');box off
-set(gca,'FontSize',12,'FontName', 'Arial','FontWeight', 'normal'); % 坐标轴刻度
+set(gca,'FontSize',12,'FontName', 'Arial','FontWeight', 'normal');
 set(gca,'LineWidth',1.5);set(gca,'TickLength',[0.03 0.03],'TickDir','out');box off
 yticks([1,4,7]);yticklabels([1,4,7]);ylim([1,7])
 xlim([0,4]);xticks([1,3]);xticklabels({'Rightward','Leftward'});
@@ -85,7 +85,7 @@ for ani=1:nAnimals
     plot([0.5,1.5],[Intra_Inter_Dir_Dist(ani,1),Intra_Inter_Dir_Dist(ani,2)],'Color',[0.8,0.8,0.8])
 end
 ylabel('Eucl. dist. (a.u.)');box off
-set(gca,'FontSize',12,'FontName', 'Arial','FontWeight', 'normal'); % 坐标轴刻度
+set(gca,'FontSize',12,'FontName', 'Arial','FontWeight', 'normal');
 set(gca,'LineWidth',1.5);set(gca,'TickLength',[0.03 0.03],'TickDir','out');box off
 yticks([1,4,7]);yticklabels([1,4,7]);ylim([1,7])
 xlim([0,2]);xticks([0.5,1.5]);xticklabels({'Intra-dir.','Inter-dir.'});

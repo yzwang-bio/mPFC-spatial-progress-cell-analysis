@@ -16,7 +16,7 @@ nAnimals=size(preference_index,1);
 mpreference_index=[mean(preference_index1,1,'omitmissing'),mean(preference_index2,1,'omitmissing')];
 sepreference_index=[std(preference_index1,1,1,'omitmissing')./sqrt(nAnimals),std(preference_index2,1,1,'omitmissing')./sqrt(nAnimals)];
 
-%%
+%% Preference index
 categ={'Naive','Trained'};
 figure('Position',[797 212 480 448],'units','normalized','Visible',figures_visibility);
 ax1=subplot(2,2,1);% Preference index

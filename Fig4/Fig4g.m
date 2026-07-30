@@ -15,9 +15,9 @@ nAnimals=size(decoding_error{1},1);
 mdecoding_error=cellfun(@(x) mean(x,1,'omitmissing'),decoding_error,'UniformOutput',false);
 sedecoding_error=cellfun(@(x) std(x,1,1,'omitmissing')./sqrt(nAnimals),decoding_error,'UniformOutput',false);
 
-%%
+%% Decoding error for spatial progress calculated using binned neuronal activity from trials in three paths as the training dataset and trials in the other path as the test dataset
 categ={'Naive','Trained'};
-figure('Position',[654.1429 659.2857 734.2857 253.7143]);title('Correlation coefficients of normalized peak firing positions between different path pairs','Visible',figures_visibility)
+figure('Position',[654.1429 659.2857 734.2857 253.7143]);title({'Decoding error for spatial progress calculated using binned neuronal activity from trials in three paths ','as the training dataset and trials in the other path as the test dataset'},'Visible',figures_visibility)
 hold on
 for i=1:size(decoding_error,2)
     % b=bar([2*i-1,2*i],[mdecoding_error{i}(1),mdecoding_error{i}(2)],'EdgeColor',bar_edgecolor,'LineWidth',bar_linewidth,'FaceColor','flat');

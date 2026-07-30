@@ -22,6 +22,7 @@ mdecoding_error_model2_dir1=mean(decoding_error_model2_dir1,1,'omitmissing');
 sedecoding_error_model2_dir1=std(decoding_error_model2_dir1,1,1,'omitmissing')./sqrt(nAnimals);
 mdecoding_error_model2_dir2=mean(decoding_error_model2_dir2,1,'omitmissing');
 sedecoding_error_model2_dir2=std(decoding_error_model2_dir2,1,1,'omitmissing')./sqrt(nAnimals);
+
 %% Trained on 75% of trials
 categ={'Decoded','Shuffled'};
 figure('Position',[797 212 480 248],'units','normalized','Visible',figures_visibility);

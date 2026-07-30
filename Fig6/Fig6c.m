@@ -16,7 +16,7 @@ nAnimals=size(progress_reponse_jitter,1);
 mprogress_reponse_jitter=[mean(progress_reponse_jitter1,1,'omitmissing'),mean(progress_reponse_jitter2,1,'omitmissing')];
 seprogress_reponse_jitter=[std(progress_reponse_jitter1,1,1,'omitmissing')./sqrt(nAnimals),std(progress_reponse_jitter2,1,1,'omitmissing')./sqrt(nAnimals)];
 
-%% Aligned to spatial progress - response jitter
+%% Comparison of the response jitter for spatial-progress cells before and after inactivation of the CA1→mPFC projection, with activity aligned by spatial progress
 categ={'Naive','Trained'};
 figure('Position',[797 212 480 448],'units','normalized','Visible',figures_visibility);
 ax1=subplot(2,2,1);% 

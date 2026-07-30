@@ -19,7 +19,7 @@ for dd=1:length(l)
     eval(sprintf('mnum_pcell_%s=mean(num_pcell_%s,1);senum_pcell_%s=std(num_pcell_%s,1,1)./sqrt(nAnimals);',l{dd},l{dd},l{dd},l{dd}))
 end
 
-%%
+%% Proportions of spatial-progress cells for rightward and leftward trials in the naive and trained stages
 categ=categorical({'Rightward','Leftward'});categ = reordercats(categ,{'Rightward','Leftward'});
 figure('Position',[797 612 600 560],'units','normalized','Visible',figures_visibility);
 subplot(2,2,1);
