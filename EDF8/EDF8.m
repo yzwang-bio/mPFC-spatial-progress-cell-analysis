@@ -19,7 +19,7 @@ for c = 1:numTrials
     for j = 1:numPaths
         clusterPoints = Y(strcmp(labels_Path,categories_Path{j}) & strcmp(labels_TrialIdx,categories_TrialIdx{c}), :);
         if isempty(clusterPoints);continue;end
-        if size(clusterPoints,1)~=numBins;error('指定试次时，点的数量应与bin数相同');end
+        if size(clusterPoints,1)~=numBins;error('When specifying trials, the number of points should be the same as the number of bins.');end
         TrialPoints{c}=clusterPoints;
 
         trial_betweenBin_dist{c}(1)=0;
