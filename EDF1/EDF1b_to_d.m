@@ -2,7 +2,7 @@
 % Created by Yizheng Wang
 % Contact: yz_wang@zju.edu.cn for bug reports or questions.
 
-clear; close all; clc; clear all;
+clear; close all; clc;
 errorbar_color='k';errorbar_width=1.5;
 circlemaze_color_schedule
 figures_visibility='on';
